@@ -3,7 +3,7 @@
 
 Aplikasi sederhana berbasis android dengan menggunakan bahasa pemrograman Kotlin dan terintegrasi API.
 
-![Instagram post - 1](https://user-images.githubusercontent.com/61482156/197320817-d3131623-9dfd-41eb-99d9-11ded316269d.png)
+![Group 50 (1)](https://user-images.githubusercontent.com/61482156/197320987-e8a011cf-74d7-4fe5-bcc5-9a55285d5351.png)
 
 ## Fitur v.1.0
 
