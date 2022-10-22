@@ -3,6 +3,8 @@
 
 Aplikasi sederhana berbasis android dengan menggunakan bahasa pemrograman Kotlin dan terintegrasi API.
 
+![Instagram post - 1](https://user-images.githubusercontent.com/61482156/197320817-d3131623-9dfd-41eb-99d9-11ded316269d.png)
+
 ## Fitur v.1.0
 
 - Jadwal pertandingan
