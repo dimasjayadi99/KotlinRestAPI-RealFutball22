@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="1,2,3,4,5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:id="@+id/tablerow"
+        >
+        <TextView
+            android:id="@+id/txt_pos"
+            android:layout_width="30dp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="100dp"
+            android:layout_column="2"
+            android:textColor="@android:color/black"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Barcelona" />
+
+        <TextView
+            android:id="@+id/txt_w"
+            android:textColor="@android:color/black"
+            android:layout_width="30dp"
+            android:layout_column="3"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="5" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/txt_d"
+            android:layout_width="30dp"
+            android:layout_column="4"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/txt_l"
+            android:textColor="@android:color/black"
+            android:layout_width="30dp"
+            android:layout_column="5"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="0" />
+    </TableRow>
+
+</TableLayout>

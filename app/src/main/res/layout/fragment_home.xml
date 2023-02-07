@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Team Standing"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:background="@color/white"
+            android:id="@+id/tableout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="1,2,3,4,5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TableRow>
+
+                <TextView
+                    android:textColor="#8C8C8C"
+                    android:layout_width="30dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Pos" />
+
+                <TextView
+                    android:textColor="#8C8C8C"
+                    android:layout_width="100dp"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Nama Team" />
+
+                <TextView
+                    android:textColor="#8C8C8C"
+                    android:layout_width="30dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="W" />
+
+                <TextView
+                    android:textColor="#8C8C8C"
+                    android:layout_width="30dp"
+                    android:layout_column="4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="D" />
+
+                <TextView
+                    android:textColor="#8C8C8C"
+                    android:layout_width="30dp"
+                    android:layout_column="5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="L" />
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_standing"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/item_standing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableout" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

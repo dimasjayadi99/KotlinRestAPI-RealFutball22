@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:id="@+id/tableout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:stretchColumns="1,2,3,4,5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="1"
+                android:id="@+id/txt_pos"
+                android:textColor="#8C8C8C" />
+
+            <TextView
+                android:id="@+id/txt_team"
+                android:layout_width="100dp"
+                android:layout_column="2"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Real Madrid"
+                android:textColor="#8C8C8C" />
+
+            <TextView
+                android:id="@+id/txt_w"
+                android:layout_width="30dp"
+                android:layout_column="3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="2"
+                android:textColor="#8C8C8C" />
+
+            <TextView
+                android:id="@+id/txt_d"
+                android:layout_width="30dp"
+                android:layout_column="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="#8C8C8C" />
+
+            <TextView
+                android:id="@+id/txt_l"
+                android:layout_width="30dp"
+                android:layout_column="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="#8C8C8C" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
